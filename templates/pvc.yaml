@@ -1,0 +1,15 @@
+{{- if .Values.persistentVolumes.enabled }}
+{{- range .Values.persistentVolumes.volumes }}
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: {{ .metadata.name }}
+  {{- with .metadata.annontations }}
+  annotations:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+spec: 
+  {{- toYaml .spec | nindent 2 }}
+---
+{{- end }}
+{{- end }}
