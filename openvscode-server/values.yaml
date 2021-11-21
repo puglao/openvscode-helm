@@ -14,7 +14,7 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-accessToken: "default-token"
+accessToken: "defaultoken"
 
 serviceAccount:
   # Specifies whether a service account should be created
