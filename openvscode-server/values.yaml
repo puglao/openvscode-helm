@@ -14,8 +14,6 @@ imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
 
-accessToken: "default-token"
-
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
@@ -37,7 +35,6 @@ securityContext: {}
   # readOnlyRootFilesystem: true
   # runAsNonRoot: true
   # runAsUser: 1000
-
 
 service:
   type: ClusterIP
